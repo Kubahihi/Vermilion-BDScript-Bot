@@ -1,0 +1,8 @@
+$nomention
+$if[$getUserVar[lang]==en]
+Hello $username!
+$endif
+
+$if[$getUserVar[lang]==cs]
+Ahoj $username!
+$endif

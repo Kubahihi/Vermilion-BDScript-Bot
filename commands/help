@@ -1,0 +1,70 @@
+$nomention
+$title[Help]
+$newSelectMenu[help;1;1;Choose a type of help!;]
+$addSelectMenuOption[help;Main;1;Non-mod commands;no;;]
+$addSelectMenuOption[help;Mod;2;Mod commands;no;;]
+
+$color[b42c1e]
+
+//2. part (onInteraction[help])
+
+$nomention
+$if[$message==1]
+    $if[$getUserVar[lang]==en]
+    $description[ 
+  Prefix: `$getServerVar[prefix]`
+  `!hello` ↴
+   *Just a “Hello”*
+  `!bdscript <argument>` ↴
+   *Without argument(Main informations about BDScript), try some BDScript function to <argument>*
+  `!bot` ↴
+   *Some stats about this Bot*
+  `!serverinfo` ↴
+   *Informations about current server*
+  `!info` ↴
+   *Informations about bot, project etc.*
+  `!uses` ↴
+   *Uses of commads per member*
+   
+  $footer[Made by Kubahihi]
+  ]
+    $endif
+    
+    $if[$getUserVar[lang]==cs]
+    $description[ 
+  Prefix: `$getServerVar[prefix]`
+  `!hello` ↴
+   *Prostě jen “Ahoj”*
+  `!bdscript <argument>` ↴
+   *Bez argumentu(Základní info o BDScriptu), zkus nějakou BDScript funkci do <argument>*
+  `!bot` ↴
+   *Nějaké staty pro tohoto Bota*
+  `!serverinfo` ↴
+   *Informace o aktuálním serveru*
+  `!info` ↴
+   *Informace o botovi, projektu atd.*
+  `!uses` ↴
+   *Použití příkazů tebou*
+  
+  $footer[Vytvořeno Kubahihim]
+  ]
+    $endif
+    
+$endif
+
+$if[$message==2]
+    $if[$getServerVar[lang]==en]
+    $description[
+  Prefix: `$getServerVar[prefix]`
+  `!setlang <cs/en>` ↴
+  *Change language for current server*
+  ]
+  
+    $footer[Made by Kubahihi]
+    $endif
+$endif
+
+$footerIcon[$userAvatar[847822770121605151]]
+$color[b42c1e]
+$author[Vermilion Dev Bot 1.1]
+$authorIcon[$serverIcon[$guildID]]

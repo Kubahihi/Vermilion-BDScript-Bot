@@ -1,0 +1,44 @@
+$nomention
+$if[$getUserVar[lang]==cs]
+    $title[**__Server Info__**]
+$serverInfo[**Jméno serveru:** 
+{name}
+**Majitel:** 
+{owner}
+**Server ID:** 
+{ID}
+**Bezpečností level:** 
+{verificationLvl}
+**Emoji:** 
+{emoji}
+**Velký server:** 
+{large};no]
+$thumbnail[$serverIcon]
+$color[b42c1e]
+$author[Vermilion Dev Bot 1.1]
+$authorIcon[$serverIcon[$guildID]]
+$footer[Vytvořeno Kubahihim]
+$footerIcon[$userAvatar[847822770121605151]]
+$endif
+
+$if[$getUserVar[lang]==en]
+    $title[**__Server Info__**]
+$serverInfo[**Name of Server:** 
+{name}
+**Owner:** 
+{owner}
+**Server ID:** 
+{ID}
+**Verification level:** 
+{verificationLvl}
+**Emoji:** 
+{emoji}
+**Large server:** 
+{large};no]
+$thumbnail[$serverIcon]
+$color[b42c1e]
+$author[Vermilion Dev Bot 1.1]
+$authorIcon[$serverIcon[$guildID]]
+$footer[Made by Kubahihi]
+$footerIcon[$userAvatar[847822770121605151]]
+$endif

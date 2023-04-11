@@ -1,0 +1,43 @@
+$nomention
+
+$if[$message==cs]
+    $onlyIf[$getUserVar[lang]!=cs;]
+    $color[b42c1e]
+$description[Jazyk byl pro tebe nastaven na `cs`!]
+$author[Vermilion Dev Bot 1.1]
+$authorIcon[$serverIcon[$guildID]]
+$title[Jazyk]
+$footer[Vytvořeno Kubahihim]
+$footerIcon[$userAvatar[847822770121605151]]
+$setUserVar[lang;cs]
+$endif
+
+
+$if[$message==en]
+    $onlyIf[$getUserVar[lang]!=en;]
+    $color[b42c1e]
+$description[Language for you has been setted to `en`!]
+$author[Vermilion Dev Bot 1.1]
+$authorIcon[$serverIcon[$guildID]]
+$title[Language]
+$footer[Made by Kubahihi]
+$footerIcon[$userAvatar[847822770121605151]]
+$setUserVar[lang;en]
+$endif
+
+$if[$message==]
+    $color[b42c1e]
+$description[*Můžeš si nastavit jeden ze dvou jazyků:
+Angličtina a Čeština.*
+Angličtina = `en` | Čeština = `cs`
+
+*You can choose one from two languages: English and Czech:*
+English = `en` | Czech = `cs`]
+$author[Vermilion Dev Bot 1.1]
+$authorIcon[$serverIcon[$guildID]]
+$title[Jazyk / Language]
+$footer[Made by Kubahihi]
+$footerIcon[$userAvatar[847822770121605151]]
+
+$endif
+

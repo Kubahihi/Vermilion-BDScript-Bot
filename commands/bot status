@@ -1,0 +1,40 @@
+$nomention
+$color[b42c1e]
+
+$if[$getUserVar[lang]==en]
+    $description[
+**Ping:** `$ping` ms
+**BDScript:** `2` sometimes `unstable`
+**Owner:** Kubahihi
+**Node Version:** $botNode 
+**Uptime:** $uptime
+**Users:** $allMembersCount
+**Your Active Language:** $getUserVar[lang]
+**Languages:** Čeština(cs), English(en)
+]
+$author[Vermilion Dev Bot 1.1]
+$authorIcon[$serverIcon[$guildID]]
+$title[Bot’s Status]
+$footer[Made by Kubahihi $addTimestamp]
+$footerIcon[$userAvatar[847822770121605151]]
+$endif
+
+$if[$getUserVar[lang]==cs]
+    $description[
+**Ping:** `$ping` ms
+**BDScript:** `2` někdy `unstable`
+**Majitel:** Kubahihi
+**Verze Node:** $botNode 
+**Uptime:** $uptime
+**Uživatelů:** $allMembersCount
+**Tvůj Aktivní jazyk:** $getUserVar[lang]
+**Jazyky:** Čeština(cs), English(en)
+]
+$author[Vermilion Dev Bot 1.1]
+$authorIcon[$serverIcon[$guildID]]
+$title[Status Bota]
+$footer[Vytvořeno Kubahihim]
+$footerIcon[$userAvatar[847822770121605151]]
+$endif
+
+   
